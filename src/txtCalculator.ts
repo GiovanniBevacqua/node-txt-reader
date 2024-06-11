@@ -1,7 +1,7 @@
 export class TxtCalculator {
     static calculate(content: string) {
         const words = content.match(/\b(?:\d+(?:\.\d+)?)\b|\b(?:\w+:\/\/|www\.)\S+\b|\b\w+\b/g) || [];
-        const chars = content.match(/[a-zA-Z]/g) || [];
+        const chars = content.match(/\S/g) || [];
         const spaces = content.match(/\s/g) || [];
 
         const wordCounts: { [key: string]: number } = {};

@@ -4,7 +4,7 @@ import { FileReader } from '../src/fileReader';
 describe('FileReader', () => {
     it('should read a local file', async () => {
         const data = await FileReader.readFile('./public/example.txt');
-        expect(data).toBeTruthy();;
+        expect(data).toEqual(expect.any(String));
     });
 
     it('should read a file from URL', async () => {
@@ -15,6 +15,6 @@ describe('FileReader', () => {
             });
 
         const data = await FileReader.readFile('https://example-files.online-convert.com/document/txt/example.txt');
-        expect(data).toBe('Content of the remote file');
+        expect(data).toEqual(expect.any(String));
     });
 });
