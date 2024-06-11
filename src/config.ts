@@ -10,11 +10,11 @@ class Config {
     }
 
     get(key: string): any {
-        // Implementa la logica per ottenere la configurazione.
+        
     }
 
     set(key: string, value: any): void {
-        // Implementa la logica per impostare la configurazione.
+        
     }
 }
 
