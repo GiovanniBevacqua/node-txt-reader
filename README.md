@@ -66,7 +66,7 @@ Questa è un'applicazione Node.js che legge un file da un percorso inserito dall
 1. Metodi:
    static calculate(content: string): Stats: Prende come input il contenuto di un file e restituisce un oggetto con le statistiche calcolate.
 
-## Test
+## Test
 
 ## Esecuzione dei Test
 
